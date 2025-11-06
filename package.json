@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A Ramli geomancy calculator.",
   "private": true,
-  "homepage": "https://YOUR_GITHUB_USERNAME.github.io/YOUR_REPOSITORY_NAME",
+  "homepage": "https://sulaiman31311-oss.github.io/ramli-app",
   "scripts": {
     "predeploy": "echo 'No build step required, deploying static files.'",
     "deploy": "gh-pages -d ."
