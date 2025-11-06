@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ha" dir="rtl">
+  <head>
+    <meta charset="UTF-ag" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ramli Geomancy Calculator</title>
+    <link rel="manifest" href="./manifest.json" />
+    <meta name="theme-color" content="#f59e0b" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      :root {
+        --color-bg: #1a202c;
+        --color-surface: #1e293b;
+        --color-border: #334155;
+        --color-text-primary: #e2e8f0;
+        --color-text-secondary: #94a3b8;
+        --color-accent: #f59e0b;
+        --color-accent-hover: #d97706;
+        --color-accent-text: #1e293b;
+        --color-interactive-hover-bg: #334155;
+      }
+      body {
+        background-color: var(--color-bg);
+        color: var(--color-text-primary);
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/client": "https://aistudiocdn.com/react-dom@^19.2.0/client",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="./index.tsx"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('./sw.js')
+            .then(registration => {
+              console.log('ServiceWorker registration successful with scope: ', registration.scope);
+            })
+            .catch(error => {
+              console.log('ServiceWorker registration failed: ', error);
+            });
+        });
+      }
+    </script>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

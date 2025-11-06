@@ -1,0 +1,5 @@
+{
+  "name": "ramli iza nazala",
+  "description": "An interactive web application for calculating and interpreting Ramli (geomancy) charts. Users can generate the 16 houses using different methods and explore the meanings and relationships between the figures.",
+  "requestFramePermissions": []
+}

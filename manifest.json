@@ -1,0 +1,16 @@
+{
+  "name": "Ramli Iza Nazala",
+  "short_name": "Ramli",
+  "description": "An interactive web application for calculating and interpreting Ramli (geomancy) charts.",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#1a202c",
+  "theme_color": "#f59e0b",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
